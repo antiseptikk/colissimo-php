@@ -144,7 +144,7 @@ class DeliveryChoice extends Colissimo
     /**
      * Retreive pickup point by ID
      *
-     * @param int $id Pickup point ID
+     * @param string $id Pickup point ID
      * @param string $shippingDate Shipping date (DD/MM/YYYY)
      * @param array $options Additional parameters
      *
@@ -152,7 +152,7 @@ class DeliveryChoice extends Colissimo
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @throws Exception
      */
-    public function findPickupPointByID(int $id, string $shippingDate, array $options = [])
+    public function findPickupPointByID(string $id, string $shippingDate, array $options = [])
     {
         $options = array_merge(
             [
